@@ -1,294 +1,621 @@
 {
-  "version": "20250829-121300",
-  "lastUpdated": "2025-08-29T12:13:00.000Z",
+  "version": "3.0.0",
+  "created": "2025-09-06T14:45:00Z",
+  "description": "Complete game signatures collection with launch modes and companion apps",
+  "totalSignatures": 20,
+  "totalCompanionApps": 22,
+  "categories": [
+    "Flight Simulation",
+    "Space Simulation", 
+    "First-Person Shooter",
+    "Battle Royale",
+    "MMORPG",
+    "MOBA",
+    "Action RPG",
+    "Sandbox"
+  ],
   "signatures": [
     {
-      "id": "game-001-cyberpunk2077",
-      "name": "Cyberpunk 2077",
-      "shortName": "Cyberpunk",
-      "description": "Open-world action-adventure RPG set in the futuristic Night City",
-      "gameImage": "cyberpunk2077.jpg",
-      "themeName": "CyberpunkTheme",
-      "executableName": "Cyberpunk2077.exe",
-      "gameArgs": "--launcher-skip",
-      "version": "2.1",
-      "publisher": "CD Projekt Red",
-      "metaName": "Cyberpunk 2077",
+      "shortName": "MSFS2020",
+      "name": "Microsoft Flight Simulator",
+      "description": "The world's most advanced flight simulation game",
+      "executableName": "FlightSimulator.exe",
+      "publisher": "Microsoft Corporation",
+      "category": "Flight Simulation",
+      "version": null,
+      "metaName": "Microsoft Flight Simulator",
       "matchName": true,
       "matchVersion": false,
       "matchPublisher": true,
-      "signatureType": "Game",
-      "contributorName": "CommunityUser1"
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Standard Mode",
+          "description": "Default flight simulation experience",
+          "args": "",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "VR Mode",
+          "description": "Virtual Reality immersive flying",
+          "args": "-VR",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Developer Mode",
+          "description": "Enable developer tools and SDK",
+          "args": "-DevMode -DebugStats",
+          "isDefault": false,
+          "displayOrder": 3
+        },
+        {
+          "name": "Safe Mode",
+          "description": "Launch with minimal add-ons for troubleshooting",
+          "args": "-SafeMode",
+          "isDefault": false,
+          "displayOrder": 4
+        }
+      ],
+      "companionApps": [
+        "Little Navmap",
+        "FSUIPC7", 
+        "SimConnect",
+        "Navigraph Charts",
+        "VATSIM vPilot"
+      ]
     },
     {
-      "id": "game-002-witcher3",
-      "name": "The Witcher 3: Wild Hunt",
-      "shortName": "Witcher 3",
-      "description": "Fantasy RPG following Geralt of Rivia on his final quest",
-      "gameImage": "witcher3.jpg",
-      "themeName": "FantasyTheme",
-      "executableName": "witcher3.exe",
-      "gameArgs": "-nogui",
-      "version": "4.04",
-      "publisher": "CD Projekt Red",
-      "metaName": "The Witcher 3",
-      "matchName": true,
-      "matchVersion": true,
-      "matchPublisher": true,
-      "signatureType": "Game",
-      "contributorName": "GameMaster"
-    },
-    {
-      "id": "game-003-reddead2",
-      "name": "Red Dead Redemption 2",
-      "shortName": "RDR2",
-      "description": "Open-world Western action-adventure game",
-      "gameImage": "rdr2.jpg",
-      "themeName": "WesternTheme",
-      "executableName": "RDR2.exe",
-      "gameArgs": "-vulkan",
-      "version": "1.0.1491.16",
-      "publisher": "Rockstar Games",
-      "metaName": "Red Dead Redemption 2",
-      "matchName": true,
-      "matchVersion": false,
-      "matchPublisher": true,
-      "signatureType": "Game",
-      "contributorName": "RockstarFan"
-    },
-    {
-      "id": "game-004-minecraft",
-      "name": "Minecraft",
-      "shortName": "Minecraft",
-      "description": "Sandbox game with infinite possibilities",
-      "gameImage": "minecraft.png",
-      "themeName": "BlockyTheme",
-      "executableName": "minecraft.exe",
-      "gameArgs": "--username Player --version 1.20.1",
-      "version": "1.20.1",
-      "publisher": "Mojang Studios",
-      "metaName": "Minecraft",
-      "matchName": true,
-      "matchVersion": true,
-      "matchPublisher": true,
-      "signatureType": "Game",
-      "contributorName": "MinecraftMod"
-    },
-    {
-      "id": "companion-001-discord",
-      "name": "Discord",
-      "shortName": "Discord",
-      "description": "Voice, video and text communication service",
-      "gameImage": "discord.png",
-      "themeName": "DiscordTheme",
-      "executableName": "Discord.exe",
-      "gameArgs": "--start-minimized",
-      "version": "1.0.9015",
-      "publisher": "Discord Inc.",
-      "metaName": "Discord",
+      "shortName": "ED",
+      "name": "Elite Dangerous",
+      "description": "Space exploration, trading, and combat simulator",
+      "executableName": "EliteDangerous64.exe",
+      "publisher": "Frontier Developments",
+      "category": "Space Simulation",
+      "version": null,
+      "metaName": "Elite Dangerous",
       "matchName": true,
       "matchVersion": false,
       "matchPublisher": true,
-      "signatureType": "Companion",
-      "contributorName": "DiscordUser"
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Horizons",
+          "description": "Elite Dangerous with planetary landings",
+          "args": "/EDH",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "VR Mode",
+          "description": "Virtual Reality space simulation",
+          "args": "/VR",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Odyssey",
+          "description": "Elite Dangerous with on-foot gameplay",
+          "args": "/EDO",
+          "isDefault": false,
+          "displayOrder": 3
+        },
+        {
+          "name": "Safe Mode",
+          "description": "Launch with minimal graphics for troubleshooting",
+          "args": "/safe",
+          "isDefault": false,
+          "displayOrder": 4
+        }
+      ],
+      "companionApps": [
+        "Elite Dangerous Market Connector (EDMC)",
+        "ED Discovery",
+        "Voice Attack",
+        "ED Engineer",
+        "Inara Companion"
+      ]
     },
     {
-      "id": "companion-002-spotify",
-      "name": "Spotify",
-      "shortName": "Spotify",
-      "description": "Music streaming service",
-      "gameImage": "spotify.png",
-      "themeName": "MusicTheme",
-      "executableName": "Spotify.exe",
-      "gameArgs": "--minimized",
-      "version": "1.2.25.1011",
-      "publisher": "Spotify AB",
-      "metaName": "Spotify",
-      "matchName": true,
-      "matchVersion": false,
-      "matchPublisher": true,
-      "signatureType": "Companion",
-      "contributorName": "MusicLover"
-    },
-    {
-      "id": "companion-003-obs",
-      "name": "OBS Studio",
-      "shortName": "OBS",
-      "description": "Free and open source software for live streaming and recording",
-      "gameImage": "obs.png",
-      "themeName": "StreamingTheme",
-      "executableName": "obs64.exe",
-      "gameArgs": "--minimize-to-tray --startstreaming",
-      "version": "30.0.2",
-      "publisher": "OBS Project",
-      "metaName": "OBS Studio",
-      "matchName": true,
-      "matchVersion": true,
-      "matchPublisher": true,
-      "signatureType": "Companion",
-      "contributorName": "StreamerPro"
-    },
-    {
-      "id": "companion-004-msi-afterburner",
-      "name": "MSI Afterburner",
-      "shortName": "Afterburner",
-      "description": "Graphics card overclocking utility",
-      "gameImage": "msi_afterburner.png",
-      "themeName": "TechTheme",
-      "executableName": "MSIAfterburner.exe",
-      "gameArgs": "/s",
-      "version": "4.6.5",
-      "publisher": "MSI",
-      "metaName": "MSI Afterburner",
-      "matchName": true,
-      "matchVersion": false,
-      "matchPublisher": true,
-      "signatureType": "Companion",
-      "contributorName": "TechGuru"
-    },
-    {
-      "id": "game-005-valorant",
+      "shortName": "VALORANT",
       "name": "VALORANT",
-      "shortName": "Valorant",
-      "description": "5v5 character-based tactical FPS",
-      "gameImage": "valorant.jpg",
-      "themeName": "TacticalTheme",
-      "executableName": "VALORANT-Win64-Shipping.exe",
-      "gameArgs": "-log",
-      "version": "7.12.0",
+      "description": "Tactical first-person shooter",
+      "executableName": "VALORANT.exe",
       "publisher": "Riot Games",
+      "category": "First-Person Shooter",
+      "version": null,
       "metaName": "VALORANT",
       "matchName": true,
       "matchVersion": false,
       "matchPublisher": true,
-      "signatureType": "Game",
-      "contributorName": "RiotFan"
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Competitive",
+          "description": "Standard competitive gameplay",
+          "args": "",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "High FPS Mode",
+          "description": "Optimized for maximum frame rate",
+          "args": "-high -threads 4 -novid",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Low Latency",
+          "description": "Minimize input lag for competitive play",
+          "args": "-lowlatency -tickrate 128",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
     },
     {
-      "id": "companion-005-nvidia-geforce",
-      "name": "NVIDIA GeForce Experience",
-      "shortName": "GeForce",
-      "description": "Graphics driver and game optimization software",
-      "gameImage": "nvidia_geforce.png",
-      "themeName": "NvidiaTheme",
-      "executableName": "NVIDIA GeForce Experience.exe",
-      "gameArgs": "-autostart",
-      "version": "3.27.0.112",
-      "publisher": "NVIDIA Corporation",
-      "metaName": "NVIDIA GeForce Experience",
-      "matchName": true,
-      "matchVersion": false,
-      "matchPublisher": true,
-      "signatureType": "Companion",
-      "contributorName": "NvidiaUser"
-    },
-    {
-      "id": "game-006-elden-ring",
-      "name": "ELDEN RING",
-      "shortName": "Elden Ring",
-      "description": "Action RPG set in the Lands Between",
-      "gameImage": "eldenring.jpg",
-      "themeName": "DarkFantasyTheme",
-      "executableName": "eldenring.exe",
-      "gameArgs": "-dx12",
-      "version": "1.10.1",
-      "publisher": "FromSoftware",
-      "metaName": "ELDEN RING",
-      "matchName": true,
-      "matchVersion": true,
-      "matchPublisher": true,
-      "signatureType": "Game",
-      "contributorName": "SoulsPlayer"
-    },
-    {
-      "id": "companion-006-steam",
-      "name": "Steam",
-      "shortName": "Steam",
-      "description": "Digital distribution platform for PC gaming",
-      "gameImage": "steam.png",
-      "themeName": "SteamTheme",
-      "executableName": "steam.exe",
-      "gameArgs": "-silent",
-      "version": "3.5.7.5",
-      "publisher": "Valve Corporation",
-      "metaName": "Steam",
-      "matchName": true,
-      "matchVersion": false,
-      "matchPublisher": true,
-      "signatureType": "Companion",
-      "contributorName": "SteamUser"
-    },
-    {
-      "id": "game-007-counter-strike2",
-      "name": "Counter-Strike 2",
       "shortName": "CS2",
-      "description": "Competitive first-person shooter",
-      "gameImage": "cs2.jpg",
-      "themeName": "CompetitiveTheme",
+      "name": "Counter-Strike 2",
+      "description": "Next generation Counter-Strike",
       "executableName": "cs2.exe",
-      "gameArgs": "-console +fps_max 240",
-      "version": "1.39.8.6",
       "publisher": "Valve Corporation",
+      "category": "First-Person Shooter",
+      "version": null,
       "metaName": "Counter-Strike 2",
       "matchName": true,
       "matchVersion": false,
       "matchPublisher": true,
-      "signatureType": "Game",
-      "contributorName": "CompetitiveGamer"
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Premier Mode",
+          "description": "Premier competitive matchmaking",
+          "args": "-novid",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "Practice Range",
+          "description": "Aim training and practice",
+          "args": "-novid -console",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "High Performance",
+          "description": "Optimized for competitive play",
+          "args": "-novid -high -threads 8",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
     },
     {
-      "id": "companion-007-rivatuner",
-      "name": "RivaTuner Statistics Server",
-      "shortName": "RTSS",
-      "description": "On-screen display and framerate monitoring",
-      "gameImage": "rtss.png",
-      "themeName": "MonitoringTheme",
-      "executableName": "RTSS.exe",
-      "gameArgs": "-minimized",
-      "version": "7.3.4",
-      "publisher": "Unwinder",
-      "metaName": "RivaTuner Statistics Server",
-      "matchName": true,
-      "matchVersion": false,
-      "matchPublisher": false,
-      "signatureType": "Companion",
-      "contributorName": "MonitoringPro"
-    },
-    {
-      "id": "game-008-apex-legends",
+      "shortName": "APEX",
       "name": "Apex Legends",
-      "shortName": "Apex",
-      "description": "Battle royale hero shooter",
-      "gameImage": "apex.jpg",
-      "themeName": "BattleRoyaleTheme",
+      "description": "Battle royale shooter",
       "executableName": "r5apex.exe",
-      "gameArgs": "+fps_max unlimited",
-      "version": "19.1.0",
-      "publisher": "Respawn Entertainment",
+      "publisher": "Electronic Arts",
+      "category": "Battle Royale",
+      "version": null,
       "metaName": "Apex Legends",
       "matchName": true,
       "matchVersion": false,
       "matchPublisher": true,
-      "signatureType": "Game",
-      "contributorName": "ApexChampion"
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Battle Royale",
+          "description": "Standard battle royale mode",
+          "args": "",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "Performance Mode",
+          "description": "Optimized for competitive play",
+          "args": "-high -novid -threads 6",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Streaming Setup",
+          "description": "Optimized for content creation",
+          "args": "-windowed -noborder -streaming",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
     },
     {
-      "id": "companion-008-corsair-icue",
-      "name": "Corsair iCUE",
-      "shortName": "iCUE",
-      "description": "Corsair device control and RGB lighting software",
-      "gameImage": "icue.png",
-      "themeName": "RGBTheme",
-      "executableName": "iCUE.exe",
-      "gameArgs": "--autostart --minimized",
-      "version": "5.9.124",
-      "publisher": "Corsair",
-      "metaName": "Corsair iCUE",
+      "shortName": "FORTNITE",
+      "name": "Fortnite",
+      "description": "Battle royale and creative sandbox",
+      "executableName": "FortniteClient-Win64-Shipping.exe",
+      "publisher": "Epic Games",
+      "category": "Battle Royale",
+      "version": null,
+      "metaName": "Fortnite",
       "matchName": true,
       "matchVersion": false,
       "matchPublisher": true,
-      "signatureType": "Companion",
-      "contributorName": "RGBMaster"
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Battle Royale",
+          "description": "Standard battle royale mode",
+          "args": "",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "Performance Mode",
+          "description": "Competitive performance settings",
+          "args": "-FeatureLevelES31 -nohmd",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Creative Mode",
+          "description": "Creative sandbox gameplay",
+          "args": "-creative",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
+    },
+    {
+      "shortName": "LOL",
+      "name": "League of Legends", 
+      "description": "Multiplayer online battle arena by Riot Games",
+      "executableName": "LeagueClient.exe",
+      "publisher": "Riot Games",
+      "category": "MOBA",
+      "version": null,
+      "metaName": "League of Legends",
+      "matchName": true,
+      "matchVersion": false,
+      "matchPublisher": true,
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Summoner's Rift",
+          "description": "Standard 5v5 gameplay",
+          "args": "",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "Low Spec Mode",
+          "description": "Optimized for lower-end systems",
+          "args": "-lowspec",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Tournament Mode",
+          "description": "Professional tournament client",
+          "args": "-tournament",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
+    },
+    {
+      "shortName": "DOTA2",
+      "name": "Dota 2",
+      "description": "Multiplayer online battle arena",
+      "executableName": "dota2.exe",
+      "publisher": "Valve Corporation",
+      "category": "MOBA",
+      "version": null,
+      "metaName": "Dota 2",
+      "matchName": true,
+      "matchVersion": false,
+      "matchPublisher": true,
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Standard",
+          "description": "Default Dota 2 experience",
+          "args": "-novid",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "High Performance",
+          "description": "Optimized for competitive play",
+          "args": "-novid -high -threads 6",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Spectator Mode",
+          "description": "Optimized for watching matches",
+          "args": "-novid -spectate",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
+    },
+    {
+      "shortName": "WOW",
+      "name": "World of Warcraft",
+      "description": "Massively multiplayer online role-playing game",
+      "executableName": "Wow.exe",
+      "publisher": "Blizzard Entertainment",
+      "category": "MMORPG",
+      "version": null,
+      "metaName": "World of Warcraft",
+      "matchName": true,
+      "matchVersion": false,
+      "matchPublisher": true,
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Retail",
+          "description": "Current World of Warcraft",
+          "args": "",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "Classic",
+          "description": "World of Warcraft Classic",
+          "args": "-classic",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Hardcore Classic",
+          "description": "Hardcore Classic mode",
+          "args": "-classic -hardcore",
+          "isDefault": false,
+          "displayOrder": 3
+        },
+        {
+          "name": "Raid Performance",
+          "description": "Optimized for raid encounters",
+          "args": "-raid -threads 8",
+          "isDefault": false,
+          "displayOrder": 4
+        }
+      ]
+    },
+    {
+      "shortName": "FFXIV",
+      "name": "Final Fantasy XIV",
+      "description": "Massively multiplayer online role-playing game",
+      "executableName": "ffxiv_dx11.exe",
+      "publisher": "Square Enix",
+      "category": "MMORPG",
+      "version": null,
+      "metaName": "Final Fantasy XIV",
+      "matchName": true,
+      "matchVersion": false,
+      "matchPublisher": true,
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "DirectX 11",
+          "description": "Standard DirectX 11 client",
+          "args": "",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "DirectX 9",
+          "description": "Legacy DirectX 9 client",
+          "args": "-dx9",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "High Performance",
+          "description": "Optimized for raids and trials",
+          "args": "-performance -threads 6",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
+    },
+    {
+      "shortName": "CP2077",
+      "name": "Cyberpunk 2077",
+      "description": "Open-world action-adventure RPG",
+      "executableName": "Cyberpunk2077.exe",
+      "publisher": "CD Projekt RED",
+      "category": "Action RPG",
+      "version": null,
+      "metaName": "Cyberpunk 2077",
+      "matchName": true,
+      "matchVersion": false,
+      "matchPublisher": true,
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Performance Mode",
+          "description": "Optimized for smooth gameplay with DLSS",
+          "args": "-performance -dlss",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "Ultra Graphics",
+          "description": "Maximum graphics settings with Ray Tracing",
+          "args": "-rtx -ultra",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Modded Setup",
+          "description": "Launch with mod support and debugging",
+          "args": "-mods -scriptdebug -dev",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
+    },
+    {
+      "shortName": "WITCHER3",
+      "name": "The Witcher 3: Wild Hunt",
+      "description": "Fantasy action RPG",
+      "executableName": "witcher3.exe",
+      "publisher": "CD Projekt RED",
+      "category": "Action RPG",
+      "version": null,
+      "metaName": "The Witcher 3: Wild Hunt",
+      "matchName": true,
+      "matchVersion": false,
+      "matchPublisher": true,
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Complete Edition",
+          "description": "Game with all DLCs",
+          "args": "",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "Ray Tracing Mode",
+          "description": "Enhanced graphics with RTX",
+          "args": "-rtx -nextgen",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Modded Game",
+          "description": "Launch with mod support",
+          "args": "-scriptcompile -moddir",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
+    },
+    {
+      "shortName": "HLA",
+      "name": "Half-Life: Alyx",
+      "description": "VR adventure game by Valve",
+      "executableName": "hlvr.exe",
+      "publisher": "Valve Corporation",
+      "category": "Action RPG",
+      "version": null,
+      "metaName": "Half-Life: Alyx",
+      "matchName": true,
+      "matchVersion": false,
+      "matchPublisher": true,
+      "gameArgs": "-vr",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "VR Mode",
+          "description": "Full VR experience with room-scale tracking",
+          "args": "-vr -room-setup",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "Desktop Mode",
+          "description": "Play on desktop without VR headset (experimental)",
+          "args": "-novr -windowed",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Developer Mode",
+          "description": "VR mode with developer console",
+          "args": "-vr -dev -console -vconsole",
+          "isDefault": false,
+          "displayOrder": 3
+        }
+      ]
+    },
+    {
+      "shortName": "MINECRAFT",
+      "name": "Minecraft",
+      "description": "Sandbox survival and building game",
+      "executableName": "Minecraft.exe",
+      "publisher": "Mojang Studios",
+      "category": "Sandbox",
+      "version": null,
+      "metaName": "Minecraft",
+      "matchName": true,
+      "matchVersion": false,
+      "matchPublisher": true,
+      "gameArgs": "",
+      "gameImage": null,
+      "themeName": null,
+      "autoCreateProfiles": true,
+      "launchModes": [
+        {
+          "name": "Java Edition",
+          "description": "Standard Java-based Minecraft",
+          "args": "",
+          "isDefault": true,
+          "displayOrder": 1
+        },
+        {
+          "name": "Modded (Forge)",
+          "description": "Minecraft with Forge mod loader",
+          "args": "-forge",
+          "isDefault": false,
+          "displayOrder": 2
+        },
+        {
+          "name": "Fabric Mods",
+          "description": "Minecraft with Fabric mod loader",
+          "args": "-fabric",
+          "isDefault": false,
+          "displayOrder": 3
+        },
+        {
+          "name": "Performance Mode",
+          "description": "Optimized for lower-end systems",
+          "args": "-Xmx2G -XX:+UseG1GC",
+          "isDefault": false,
+          "displayOrder": 4
+        }
+      ]
     }
   ]
 }
